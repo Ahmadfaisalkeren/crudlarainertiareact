@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import AddProvince from "./AddProvince";
-import { ImageURL } from "@/Components/ImageUrl";
 import Search from "@/Components/Search";
 import Pagination from "@/Components/Pagination";
 import UpdateProvince from "./UpdateProvince";
