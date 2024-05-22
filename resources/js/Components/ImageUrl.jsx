@@ -1,1 +1,1 @@
-export const ImageURL = "https://limr.byahmad.my.id/";
+export const ImageURL = "https://lir.byahmad.my.id/";
