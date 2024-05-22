@@ -1,4 +1,3 @@
-import { ImageURL } from "@/Components/ImageUrl";
 import MyOwnModal from "@/Components/MyOwnModal";
 import React, { useEffect, useRef, useState } from "react";
 import { FaPlus } from "react-icons/fa";
@@ -40,11 +39,11 @@ const UpdateCitizen = ({ isOpen, onClose, citizenData, cities, provinces }) => {
             }
             setCityId(citizenData.city_id);
             setImage(
-                citizenData.image
-                    ? `${ImageURL}storage/${citizenData.image}`
-                    : null
+                citizenData.image ? `/storage/${citizenData.image}` : null
             );
-            setPreviewUrl(`${ImageURL}storage/${citizenData.image}`);
+            setPreviewUrl(
+                citizenData.image ? `/storage/${citizenData.image}` : null
+            );
         }
     }, [citizenData, provinces]);
 

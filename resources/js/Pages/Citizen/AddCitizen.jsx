@@ -89,7 +89,7 @@ const AddCitizen = ({ isOpen, onClose, cities, provinces }) => {
             setGender("");
             setAddress("");
             setCityId("");
-            setProvinceId("");
+            setSelectedProvince(null);
             setPreviewUrl("");
 
             // Logic dibawah ini untuk clear input file value setelah store data berhasil

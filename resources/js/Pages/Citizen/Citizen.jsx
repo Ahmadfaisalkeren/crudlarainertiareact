@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import AddCitizen from "./AddCitizen";
-import { ImageURL } from "@/Components/ImageUrl";
 import Search from "@/Components/Search";
 import Pagination from "@/Components/Pagination";
 import UpdateCitizen from "./UpdateCitizen";
@@ -185,7 +184,7 @@ const Citizen = ({ auth, citizens, cities, provinces }) => {
                                                             }}
                                                         >
                                                             <img
-                                                                src={`${ImageURL}storage/${citizen.image}`}
+                                                                src={`/storage/${citizen.image}`}
                                                                 alt="Image Not Found"
                                                                 className="w-20 h-20"
                                                             />
